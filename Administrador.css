@@ -1,0 +1,146 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: hsl(145, 75%, 52%, 50%);
+    overflow: hidden;
+}
+
+.div
+{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #808080;
+    border-radius: 25px;
+}
+
+.div button
+{
+    width: 310px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.div button:hover 
+{
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.div button:active 
+{
+    transform: translateY(-1px);
+}
+
+.titulo
+{
+    width: 400px;
+    height: 100px;
+    font-size: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+}
+
+.alinharlogo
+{
+    width: 33.3%;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinhar
+{
+    width: 33.3%;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita
+{
+    width: 33.3%;
+    height: 98vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;   
+}
+
+.botaosair
+{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaosair button 
+{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 260px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.botaosair button span 
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.botaosair button span:after 
+{
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.botaosair button:hover span 
+{
+    padding-right: 15px;
+}
+
+.botaosair button:hover span:after 
+{
+    opacity: 1;
+    right: 0;
+}
